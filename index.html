@@ -1,0 +1,36 @@
+  <!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="format-detection" content="telephone=no">
+  <title>ФОРМА</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+  <div class="modal write-us hidden">
+<!--     <button class="write-us__close close-icon type="button">
+      <span class="visually-hidden">Закрыть форму отправки сообщения</span>
+    </button> -->
+    <form class="write-us__form" method="post" action="chech.php">
+      <div class="write-us__item input-text">
+        <label class="input-text__description" for="name">Ваше имя:</label>
+        <input class="input-text__field" type="text" name="fullname" placeholder="Имя Фамилия Отчество" title="Имя Фамилия">
+      </div>
+      <div class="write-us__item input-text">
+        <label class="input-text__description" for="email">Ваш e-mail</label>
+        <input class="input-text__field" type="email" id="email" name="email" placeholder="email@example.com">
+      </div>
+       <div class="write-us__item input-text">
+        <label class="input-text__description" for="mobile">телефон</label>
+        <input class="input-text__field" type="mobile" id="mobile" name="mobile" placeholder="номер телеона">
+      </div>
+      <div class="write-us__item input-text">
+        <label class="input-text__description" for="letter">Текс письма:</label>
+        <textarea class="input-text__field" id="letter" name="letter" rows="7" placeholder="В свободной форме"></textarea>
+      </div>
+      <button class="write-us__submit button" type="submit">Отправить</button>
+    </form>
+  </div>
+
+  </body>
+</html>
